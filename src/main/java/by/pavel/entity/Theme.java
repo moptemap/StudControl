@@ -14,7 +14,7 @@ public class Theme {
 
     @ManyToOne
     @JoinColumn(name = "course_id", referencedColumnName = "id", nullable = false)
-    private long courseId;
+    private Course course;
 
     @Column(name = "name", nullable = false, length = 100)
     private String name;
